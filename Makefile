@@ -53,7 +53,7 @@ $(NAME):
 	@make fclean -C $(LIBFT_DIR)
 	@make -C $(LIBFT_DIR)
 	@gcc $(FLAGS) -c $(SRC) $(HEADER)
-	@gcc -o $(NAME) $(OBJ) $(LIBFTA) -lmlx -framework OpenGL -framework AppKit 
+	@gcc -o $(NAME) $(OBJ) $(LIBFTA) -L/usr/local/lib/ -I/usr/local/include -lmlx -framework OpenGL -framework AppKit 
 
 clean:
 	@clear
